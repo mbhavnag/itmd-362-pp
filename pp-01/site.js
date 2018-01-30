@@ -1,5 +1,7 @@
 $('#form').on('submit',
 function(e) {
+  var phone = $('#phone').val();
+  var dob = $('#birthday').val();
   var email = $('#email').val();
   var valid = /.+@.+\..+/g;
   var validemail = valid.test(email);
@@ -11,5 +13,9 @@ function(e) {
  } else {
    console.log('Valid email');
    $('body').replaceWith('<h1 id="success">Your submittion was successful<h1>');
+ }
+ if (phone==null || phone=="",dob==null || dob=="",email==null || email==""){
+   alert("PLease fill-out all the fields!");
+   return false;
  }
 });
