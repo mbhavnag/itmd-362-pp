@@ -7,7 +7,28 @@
   <link rel="stylesheet" media="screen" href="screen.css" />
 </head>
 <body>
-
+  <main>
+    <form method="get" id="form" action="#null">
+      <ul id="form">
+        <li>
+          <label for="email">E-mail</label>
+          <input placeholder="you@example.com" type="email" id="email" name="email" />
+        </li>
+        <li>
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(xxx)-xxx-xxxx"/>
+        </li>
+        <li>
+          <label for="birthday">Date of birth</label>
+          <input type="date" id="birthday" name="birthday" />
+        </li>
+        <li>
+          <input type="submit" id="submit" value="Submit" />
+        </li>
+      </ul>
+    </form>
+  </main>
   <script src="site.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
